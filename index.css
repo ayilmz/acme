@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    background-color: #E5E5E5;
+}
+
+a {
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+
+ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li img.logo {
+    margin-right: 8px;
+}
+
+.logo-title {
+    font-size: 20px;
+}
+
+.wrapper {
+    background-color: white;
+    width: 1152px;
+    margin: 0 auto;
+    display: block;
+}
+
+.wrapper .left {
+    width: 330px;
+    height: 700px;
+    float: left;
+    background-color: white;
+    padding-top: 48px;
+}
+
+.wrapper .right {
+    width: 822px;
+    height: 700px;
+    background-color: #F8F8F8;
+    border-left: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    float: left;
+}
+
+.emails{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 9px;
+    margin-bottom: 42px;
+}
+
+.label {
+    width: 330px;
+    height: 71px;
+    background: #0047FF;
+    justify-content: space-between;
+    margin-bottom: 19px;
+    position: relative;
+}
+
+.label .info {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0047FF;
+}
+
+.label .info.check-icon {
+    background-color: transparent;
+    border: 10px solid white;
+}
+
+.label.disable {
+    background-color: #E0E0E4;
+}
+
+.label span {
+    font-size: 25px;
+    line-height: 34px;
+    color: white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.label.disable span {
+    color: black;
+}
+
+.label.disable .info{
+    color: #000000;
+}
+
+.right-arrow {
+    width: 0;
+    height: 0;
+    border-top: 36px solid transparent;
+    border-left: 30px solid #0047FF;
+    border-bottom: 36px solid transparent;
+    position: absolute;
+    right: -30px;
+}
