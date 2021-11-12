@@ -18,6 +18,9 @@ a {
 ul{
     list-style-type: none;
 }
+img{
+    border: 0;
+}
 
 ul li {
     display: flex;
@@ -35,22 +38,20 @@ ul li img.logo {
 
 .wrapper {
     background-color: white;
-    width: 1152px;
-    margin: 0 auto;
-    display: block;
+    display: flex;
 }
 
 .wrapper .left {
     width: 330px;
-    height: 700px;
+    min-height: 700px;
     float: left;
     background-color: white;
     padding-top: 48px;
 }
 
 .wrapper .right {
-    width: 822px;
-    height: 700px;
+    width: calc(100% - 330px);
+    min-height: 700px;
     background-color: #F8F8F8;
     border-left: 1px solid #E8E8E8;
     box-sizing: border-box;
@@ -71,9 +72,16 @@ ul li img.logo {
     width: 330px;
     height: 71px;
     background: #0047FF;
-    justify-content: space-between;
+
     margin-bottom: 19px;
     position: relative;
+}
+
+.label a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .label .info {
@@ -121,4 +129,43 @@ ul li img.logo {
     border-bottom: 36px solid transparent;
     position: absolute;
     right: -30px;
+}
+.right {
+    padding: 55px 62px ;
+}
+.right .title {
+    font-size: 30px;
+    line-height: 41px;
+    color: black;
+    margin-bottom: 17px;
+}
+
+.right .information {
+    padding-left: 10px;
+    width: 633px;
+}
+
+.video {
+    margin-top: 50px;
+    width: 633px;
+}
+.video-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    width: 633px;
+}
+.video-links .passive {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #BBBBBB;
+}
+
+.video-links .active {
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 27px;
+    color: #0047FF;
 }
